@@ -11,7 +11,7 @@ connectDB()
 
 // middle ware 
 app.use(express.json());
-// app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cors());
 
 
