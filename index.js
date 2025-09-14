@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express  = require('express');
-const port = process.env.port || 7000;
+const PORT = process.env.PORT || 7000;
 const bodyParser = require("body-parser");
 const app = express();
 const connectDB = require('./config/db.js')
@@ -19,6 +19,6 @@ app.use(cors());
 app.use("/api/auth", require("./routes/auth.js"));
 
 
-app.listen(port,()=>{
-    console.log(`server start here at ${port} number`);
+app.listen(PORT,()=>{
+    console.log(`server start here at ${PORT} number`);
 })
