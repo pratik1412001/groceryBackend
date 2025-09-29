@@ -4,7 +4,7 @@ const routes = express.Router();
 const { addProduct, getProducts } = require('../controller/addProduct');
 
 routes.post('/product',addProduct)
-routes.get('getproduct',getProducts)
+routes.get('/getproduct',getProducts)
 
 
 
