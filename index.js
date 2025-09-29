@@ -17,6 +17,7 @@ app.use(cors());
 
 // routes here 
 app.use("/api/auth", require("./routes/auth.js"));
+app.use("/api",require('./routes/product.js'))
 
 
 app.listen(PORT,()=>{
