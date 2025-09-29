@@ -4,6 +4,7 @@ const {register,login} = require('../controller/authcontoller');
 const { addProduct } = require('../controller/addProduct');
 
 routes.post('/product',addProduct)
+routes.get('getproduct',addProduct)
 
 
 
