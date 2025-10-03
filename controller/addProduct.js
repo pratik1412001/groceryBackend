@@ -1,5 +1,6 @@
 const Product = require("../models/product");
 
+
 exports.addProduct = async (req, res) => {
     try {
         const { productname, price, unit, category } = req.body;
@@ -9,7 +10,7 @@ exports.addProduct = async (req, res) => {
         }
 
         // collect all file paths
-       const imagePaths = req.files ? req.files.map(file => `/uploads/${file.filename}`) : [];
+        const imagePaths = req.files ? req.files.map(file => `/uploads/${file.filename}`) : [];
 
         const newProduct = new Product({
             productname,
