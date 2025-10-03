@@ -15,7 +15,8 @@ const ProductSchema = new mongoose.Schema({
     },
     category: {
         type: String,
-        required: true, // e.g. "fruits", "electronics"
+        enum: ["Fruits", "Vegetables"],
+        required: true
     },
     images: [String] // will store the file path
 }, { timestamps: true })
